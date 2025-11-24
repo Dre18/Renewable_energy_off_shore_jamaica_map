@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamaica Maritime Navigation System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        .map-container {
+            width: 100%;
+            height: calc(100vh - 120px);
+            border: none;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+        .direct-link {
+            background: rgba(0,0,0,0.1);
+            padding: 10px;
+            text-align: center;
+            margin: 10px 20px;
+            border-radius: 5px;
+        }
+        .direct-link a {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .direct-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Jamaica Maritime Zone</h1>
+        <p>Interactive maps with solar, wind, and wave data for Jamaica's territorial waters</p>
+    </div>
+    
+    <div class="direct-link">
+        📍 <a href="kamala_waters_shapefile_map.html" target="_blank">Open Full Screen Interactive Map</a>
+    </div>
+    
+    <iframe 
+        src="kamala_waters_shapefile_map.html" 
+        class="map-container"
+        title="Jamaica Maritime Navigation Map">
+    </iframe>
+    
+    <div class="footer">
+        🚢 Jamaica Maritime Zone to analyze renewable energy potential | Generated with kamala_map.py | 
+        <a href="kamala_waters_shapefile_map.html" style="color: #4CAF50;">Full Screen Map</a>
+    </div>
+</body>
+</html>
